@@ -22,6 +22,3 @@ A responsive Hotel and Restaurant website built using HTML, CSS, and JavaScript.
 
 This project was created to practice front-end web development and build a user-friendly, responsive website for a hotel and restaurant.
 
-## Author
-
-**Ishita Salla**
