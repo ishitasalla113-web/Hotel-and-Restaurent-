@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Restaurant | Grand Vista</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/restaurant.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="header restaurant-header">
+
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo">
+                Grand<span>Vista</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="index.html#rooms">Rooms</a>
+                </li>
+
+                <li>
+                    <a href="restaurant.html" class="active">Restaurant</a>
+                </li>
+
+                <li>
+                    <a href="index.html#about">About</a>
+                </li>
+
+                <li>
+                    <a href="index.html#contact">Contact</a>
+                </li>
+
+                <li>
+                    <a href="#reservation" class="nav-btn">Reserve Table</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= RESTAURANT HERO ================= -->
+
+    <section class="restaurant-hero">
+
+        <div class="restaurant-hero-overlay"></div>
+
+        <div class="restaurant-hero-content container">
+
+            <p class="hero-subtitle">
+                GRAND VISTA RESTAURANT
+            </p>
+
+            <h1>
+                A table full of
+                <span>memories.</span>
+            </h1>
+
+            <p>
+                Seasonal ingredients, inspired recipes,
+                and an unforgettable dining experience.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= INTRO ================= -->
+
+    <section class="restaurant-intro section">
+
+        <div class="container intro-grid">
+
+            <div>
+
+                <p class="section-label">
+                    THE GRAND VISTA EXPERIENCE
+                </p>
+
+                <h2>
+                    Food created with
+                    <span>passion.</span>
+                </h2>
+
+            </div>
+
+            <div class="intro-text">
+
+                <p>
+                    At Grand Vista Restaurant, we believe great food
+                    is about more than ingredients. It is about the
+                    people, the atmosphere, and the memories created
+                    around the table.
+                </p>
+
+                <p>
+                    Our chefs combine classic techniques with modern
+                    flavors to create dishes that celebrate both
+                    tradition and creativity.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MENU ================= -->
+
+    <section class="menu-section section" id="menu">
+
+        <div class="container">
+
+            <div class="section-heading centered">
+
+                <p class="section-label">
+                    OUR MENU
+                </p>
+
+                <h2>
+                    Discover our
+                    <span>signature dishes.</span>
+                </h2>
+
+                <p class="menu-description">
+                    From elegant starters to indulgent desserts,
+                    every dish is prepared fresh by our culinary team.
+                </p>
+
+            </div>
+
+
+            <!-- MENU FILTER -->
+
+            <div class="menu-filters">
+
+                <button class="filter-btn active" data-filter="all">
+                    All
+                </button>
+
+                <button class="filter-btn" data-filter="breakfast">
+                    Breakfast
+                </button>
+
+                <button class="filter-btn" data-filter="starter">
+                    Starters
+                </button>
+
+                <button class="filter-btn" data-filter="main">
+                    Main Course
+                </button>
+
+                <button class="filter-btn" data-filter="dessert">
+                    Desserts
+                </button>
+
+                <button class="filter-btn" data-filter="drinks">
+                    Drinks
+                </button>
+
+            </div>
+
+
+            <!-- MENU GRID -->
+
+            <div class="menu-grid">
+
+
+                <!-- ITEM 1 -->
+
+                <article class="menu-card" data-category="breakfast">
+
+                    <div class="menu-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=700&q=80"
+                            alt="Classic breakfast"
+                        >
+
+                    </div>
+
+                    <div class="menu-info">
+
+                        <div class="menu-title">
+                            <h3>Grand Breakfast</h3>
+                            <strong>$18</strong>
+                        </div>
+
+                        <p>
+                            Farm eggs, sourdough toast, grilled tomato,
+                            avocado and crispy potatoes.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ITEM 2 -->
+
+                <article class="menu-card" data-category="breakfast">
+
+                    <div class="menu-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1495214783159-3503fd1b572d?auto=format&fit=crop&w=700&q=80"
+                            alt="Pancakes"
+                        >
+
+                    </div>
+
+                    <div class="menu-info">
+
+                        <div class="menu-title">
+                            <h3>Berry Pancakes</h3>
+                            <strong>$14</strong>
+                        </div>
+
+                        <p>
+                            Fluffy pancakes, seasonal berries,
+                            maple syrup and vanilla cream.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ITEM 3 -->
+
+                <article class="menu-card" data-category="starter">
+
+                    <div class="menu-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1541014741259-de529411b96a?auto=format&fit=crop&w=700&q=80"
+                            alt="Bruschetta"
+                        >
+
+                    </div>
+
+                    <div class="menu-info">
+
+                        <div class="menu-title">
+                            <h3>Garden Bruschetta</h3>
+                            <strong>$11</strong>
+                        </div>
+
+                        <p>
+                            Grilled sourdough, heirloom tomatoes,
+                            basil, garlic and extra virgin olive oil.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ITEM 4 -->
+
+                <article class="menu-card" data-category="starter">
+
+                    <div class="menu-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=700&q=80"
+                            alt="Shrimp appetizer"
+                        >
+
+                    </div>
+
+                    <div class="menu-info">
+
+                        <div class="menu-title">
+                            <h3>Garlic Butter Shrimp</h3>
+                            <strong>$16</strong>
+                        </div>
+
+                        <p>
+                            Pan-seared shrimp with garlic butter,
+                            lemon and fresh herbs.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ITEM 5 -->
+
+                <article class="menu-card featured-dish" data-category="main">
+
+                    <div class="menu-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=700&q=80"
+                            alt="Grilled steak"
+                        >
+
+                        <span class="chef-choice">
+                            CHEF'S CHOICE
+                        </span>
+
+                    </div>
+
+                    <div class="menu-info">
+
+                        <div class="menu-title">
+                            <h3>Prime Grilled Steak</h3>
+                            <strong>$38</strong>
+                        </div>
+
+                        <p>
+                            Premium grilled beef, roasted vegetables,
+                            herb butter and red wine jus.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ITEM 6 -->
+
+                <article class="menu-card" data-category="main">
+
+                    <div class="menu-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=700&q=80"
+                            alt="Pasta"
+                        >
+
+                    </div>
+
+                    <div class="menu-info">
+
+                        <div class="menu-title">
+                            <h3>Truffle Pasta</h3>
+                            <strong>$24</strong>
+                        </div>
+
+                        <p>
+                            Handmade pasta, wild mushrooms,
+                            parmesan and black truffle cream.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ITEM 7 -->
+
+                <article class="menu-card" data-category="main">
+
+                    <div class="menu-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=700&q=80"
+                            alt="Grilled chicken"
+                        >
+
+                    </div>
+
+                    <div class="menu-info">
+
+                        <div class="menu-title">
+                            <h3>Herb Roasted Chicken</h3>
+                            <strong>$22</strong>
+                        </div>
+
+                        <p>
+                            Free-range chicken, seasonal vegetables,
+                            roasted potatoes and herb jus.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ITEM 8 -->
+
+                <article class="menu-card" data-category="dessert">
+
+                    <div class="menu-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=700&q=80"
+                            alt="Chocolate dessert"
+                        >
+
+                    </div>
+
+                    <div class="menu-info">
+
+                        <div class="menu-title">
+                            <h3>Chocolate Mousse</h3>
+                            <strong>$10</strong>
+                        </div>
+
+                        <p>
+                            Dark chocolate mousse, cocoa crumble,
+                            vanilla cream and fresh berries.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ITEM 9 -->
+
+                <article class="menu-card" data-category="dessert">
+
+                    <div class="menu-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=700&q=80"
+                            alt="Dessert"
+                        >
+
+                    </div>
+
+                    <div class="menu-info">
+
+                        <div class="menu-title">
+                            <h3>Berry Cheesecake</h3>
+                            <strong>$11</strong>
+                        </div>
+
+                        <p>
+                            Creamy cheesecake, mixed berries
+                            and house-made berry sauce.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ITEM 10 -->
+
+                <article class="menu-card" data-category="drinks">
+
+                    <div class="menu-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=700&q=80"
+                            alt="Fresh cocktail"
+                        >
+
+                    </div>
+
+                    <div class="menu-info">
+
+                        <div class="menu-title">
+                            <h3>Vista Signature</h3>
+                            <strong>$12</strong>
+                        </div>
+
+                        <p>
+                            Fresh citrus, passion fruit,
+                            mint and sparkling water.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ITEM 11 -->
+
+                <article class="menu-card" data-category="drinks">
+
+                    <div class="menu-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?auto=format&fit=crop&w=700&q=80"
+                            alt="Coffee"
+                        >
+
+                    </div>
+
+                    <div class="menu-info">
+
+                        <div class="menu-title">
+                            <h3>Grand Vista Coffee</h3>
+                            <strong>$6</strong>
+                        </div>
+
+                        <p>
+                            Freshly roasted specialty coffee
+                            served with a choice of milk.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ITEM 12 -->
+
+                <article class="menu-card" data-category="drinks">
+
+                    <div class="menu-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=700&q=80"
+                            alt="Fresh juice"
+                        >
+
+                    </div>
+
+                    <div class="menu-info">
+
+                        <div class="menu-title">
+                            <h3>Fresh Tropical Juice</h3>
+                            <strong>$8</strong>
+                        </div>
+
+                        <p>
+                            Pineapple, orange, mango and
+                            freshly squeezed lime.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CHEF ================= -->
+
+    <section class="chef-section section">
+
+        <div class="container chef-grid">
+
+            <div class="chef-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=900&q=80"
+                    alt="Executive Chef"
+                >
+
+            </div>
+
+            <div class="chef-content">
+
+                <p class="section-label">
+                    MEET OUR CHEF
+                </p>
+
+                <h2>
+                    Passion on every
+                    <span>plate.</span>
+                </h2>
+
+                <p>
+                    Executive Chef Daniel Morgan brings more than 20 years
+                    of culinary experience to Grand Vista.
+                </p>
+
+                <p>
+                    His philosophy is simple: use exceptional ingredients,
+                    respect traditional techniques, and never stop creating.
+                </p>
+
+                <div class="chef-signature">
+                    Daniel Morgan
+                </div>
+
+                <span class="chef-role">
+                    Executive Chef
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= OPENING HOURS ================= -->
+
+    <section class="hours-section">
+
+        <div class="container hours-grid">
+
+            <div>
+
+                <p class="section-label">
+                    COME DINE WITH US
+                </p>
+
+                <h2>
+                    Opening
+                    <span>hours.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="hours-list">
+
+                <div>
+                    <span>Monday – Thursday</span>
+                    <strong>07:00 AM – 10:00 PM</strong>
+                </div>
+
+                <div>
+                    <span>Friday – Saturday</span>
+                    <strong>07:00 AM – 11:00 PM</strong>
+                </div>
+
+                <div>
+                    <span>Sunday</span>
+                    <strong>07:00 AM – 09:00 PM</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= RESERVATION ================= -->
+
+    <section class="reservation-section" id="reservation">
+
+        <div class="reservation-overlay"></div>
+
+        <div class="container reservation-content">
+
+            <p class="section-label">
+                RESERVE YOUR TABLE
+            </p>
+
+            <h2>
+                Good food deserves
+                <span>good company.</span>
+            </h2>
+
+            <p>
+                Reserve your table and let us take care of the rest.
+            </p>
+
+            <form id="restaurantBookingForm" class="reservation-form">
+
+                <div>
+                    <label>Name</label>
+                    <input
+                        type="text"
+                        id="guestName"
+                        placeholder="Your name"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label>Guests</label>
+
+                    <select id="guestCount">
+
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5 Guests</option>
+                        <option value="6">6 Guests</option>
+                        <option value="7">7 Guests</option>
+                        <option value="8">8 Guests</option>
+
+                    </select>
+
+                </div>
+
+                <div>
+                    <label>Date</label>
+
+                    <input
+                        type="date"
+                        id="restaurantDate"
+                        required
+                    >
+
+                </div>
+
+                <div>
+                    <label>Time</label>
+
+                    <select id="restaurantTime">
+
+                        <option value="">Select time</option>
+                        <option>07:00 PM</option>
+                        <option>07:30 PM</option>
+                        <option>08:00 PM</option>
+                        <option>08:30 PM</option>
+                        <option>09:00 PM</option>
+                        <option>09:30 PM</option>
+
+                    </select>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                >
+                    Reserve Table
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-about">
+
+                <a href="index.html" class="logo">
+                    Grand<span>Vista</span>
+                </a>
+
+                <p>
+                    A destination where exceptional hospitality,
+                    luxurious comfort, and unforgettable dining
+                    come together.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Explore</h4>
+
+                <a href="index.html">Home</a>
+                <a href="index.html#rooms">Rooms</a>
+                <a href="restaurant.html">Restaurant</a>
+                <a href="index.html#about">About</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Contact</h4>
+
+                <p>📍 25 Luxury Avenue, City Center</p>
+                <p>📞 +1 234 567 890</p>
+                <p>✉️ hello@grandvista.com</p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Follow Us</h4>
+
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <p>
+                © 2026 Grand Vista Hotel & Restaurant.
+                All rights reserved.
+            </p>
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+    <script src="js/restaurant.js"></script>
+
+</body>
+</html>

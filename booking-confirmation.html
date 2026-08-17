@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Booking Confirmation | Grand Vista</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/booking.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="header">
+
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo">
+                Grand<span>Vista</span>
+            </a>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="rooms.html">Rooms</a>
+                </li>
+
+                <li>
+                    <a href="restaurant.html">Restaurant</a>
+                </li>
+
+                <li>
+                    <a href="index.html#about">About</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- CONFIRMATION -->
+
+    <main class="confirmation-page">
+
+        <div class="container">
+
+            <div class="confirmation-card">
+
+                <div class="success-icon">
+                    ✓
+                </div>
+
+                <p class="section-label">
+                    RESERVATION RECEIVED
+                </p>
+
+                <h1>
+                    Your stay is
+                    <span>confirmed!</span>
+                </h1>
+
+                <p class="confirmation-message">
+                    Thank you for choosing Grand Vista.
+                    Your reservation details are shown below.
+                </p>
+
+
+                <!-- BOOKING ID -->
+
+                <div class="booking-id-box">
+
+                    <span>BOOKING ID</span>
+
+                    <strong id="bookingId">
+                        GV-000000
+                    </strong>
+
+                </div>
+
+
+                <!-- BOOKING DETAILS -->
+
+                <div class="confirmation-details">
+
+                    <div class="detail-item">
+
+                        <span>Guest</span>
+
+                        <strong id="confirmName">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail-item">
+
+                        <span>Room</span>
+
+                        <strong id="confirmRoom">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail-item">
+
+                        <span>Guests</span>
+
+                        <strong id="confirmGuests">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail-item">
+
+                        <span>Check-in</span>
+
+                        <strong id="confirmCheckIn">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail-item">
+
+                        <span>Check-out</span>
+
+                        <strong id="confirmCheckOut">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail-item">
+
+                        <span>Nights</span>
+
+                        <strong id="confirmNights">
+                            —
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TOTAL -->
+
+                <div class="confirmation-total">
+
+                    <span>Total Amount</span>
+
+                    <strong>
+                        $<span id="confirmTotal">0</span>
+                    </strong>
+
+                </div>
+
+
+                <!-- ACTIONS -->
+
+                <div class="confirmation-actions">
+
+                    <a
+                        href="rooms.html"
+                        class="btn btn-primary"
+                    >
+                        Book Another Room
+                    </a>
+
+                    <a
+                        href="index.html"
+                        class="btn btn-outline-dark"
+                    >
+                        Back to Home
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Grand Vista Hotel & Restaurant.
+                All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/booking.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Grand Vista | Hotel & Restaurant</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo">
+                Grand<span>Vista</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="restaurant.html">Restaurant</a></li>
+                <li><a href="about.html">About</a></li>
+              
+                <li>
+                    <a href="#booking" class="nav-btn">Book Now</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content container">
+
+            <p class="hero-subtitle">WELCOME TO GRAND VISTA</p>
+
+            <h1>
+                Stay in Comfort.<br>
+                <span>Dine in Style.</span>
+            </h1>
+
+            <p class="hero-description">
+                Experience exceptional hospitality, luxurious rooms,
+                and unforgettable dining under one roof.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#booking" class="btn btn-primary">
+                    Book Your Stay
+                </a>
+
+                <a href="#restaurant" class="btn btn-outline">
+                    Explore Restaurant
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BOOKING BAR ================= -->
+    <section class="booking-wrapper">
+        <div class="booking-bar container">
+
+            <div class="booking-item">
+                <label>CHECK IN</label>
+                <input type="date" id="checkIn">
+            </div>
+
+            <div class="booking-item">
+                <label>CHECK OUT</label>
+                <input type="date" id="checkOut">
+            </div>
+
+            <div class="booking-item">
+                <label>GUESTS</label>
+                <select>
+                    <option>1 Guest</option>
+                    <option>2 Guests</option>
+                    <option>3 Guests</option>
+                    <option>4 Guests</option>
+                    <option>5+ Guests</option>
+                </select>
+            </div>
+
+            <button class="btn btn-primary booking-btn" id="bookingBtn">
+                Check Availability
+            </button>
+
+        </div>
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about section" id="about">
+
+        <div class="container about-grid">
+
+            <div class="about-images">
+
+                <img
+                    src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+                    alt="Luxury hotel"
+                    class="about-img-main"
+                >
+
+                <div class="experience-box">
+                    <strong>15+</strong>
+                    <span>Years of<br>Hospitality</span>
+                </div>
+
+            </div>
+
+            <div class="about-content">
+
+                <p class="section-label">ABOUT GRAND VISTA</p>
+
+                <h2>
+                    Where luxury meets
+                    <span>genuine hospitality.</span>
+                </h2>
+
+                <p>
+                    Grand Vista is designed for travelers who appreciate
+                    comfort, elegance, and exceptional service. From our
+                    beautifully appointed rooms to our signature restaurant,
+                    every detail is created to make your stay memorable.
+                </p>
+
+                <p>
+                    Whether you're visiting for business, a romantic getaway,
+                    or a family vacation, our team is here to make you feel
+                    completely at home.
+                </p>
+
+                <a href="#rooms" class="text-link">
+                    Discover Our Rooms →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ROOMS ================= -->
+    <section class="rooms section" id="rooms">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="section-label">OUR ACCOMMODATION</p>
+
+                    <h2>
+                        Rooms made for
+                        <span>rest & relaxation.</span>
+                    </h2>
+                </div>
+
+                <a href="#" class="text-link">
+                    View All Rooms →
+                </a>
+
+            </div>
+
+
+            <div class="room-grid">
+
+                <!-- Room 1 -->
+                <article class="room-card">
+
+                    <div class="room-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=80"
+                            alt="Deluxe Room"
+                        >
+
+                        <span class="room-tag">POPULAR</span>
+
+                    </div>
+
+                    <div class="room-info">
+
+                        <div class="room-title">
+                            <h3>Deluxe Room</h3>
+                            <span>$149 <small>/ night</small></span>
+                        </div>
+
+                        <p>
+                            A beautifully designed room with modern amenities
+                            and a relaxing city view.
+                        </p>
+
+                        <div class="room-features">
+                            <span>🛏 King Bed</span>
+                            <span>👤 2 Guests</span>
+                            <span>📶 WiFi</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Room 2 -->
+                <article class="room-card">
+
+                    <div class="room-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80"
+                            alt="Executive Suite"
+                        >
+
+                    </div>
+
+                    <div class="room-info">
+
+                        <div class="room-title">
+                            <h3>Executive Suite</h3>
+                            <span>$249 <small>/ night</small></span>
+                        </div>
+
+                        <p>
+                            Spacious luxury with a separate living area,
+                            premium furnishings, and stunning views.
+                        </p>
+
+                        <div class="room-features">
+                            <span>🛏 King Bed</span>
+                            <span>👤 3 Guests</span>
+                            <span>📶 WiFi</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Room 3 -->
+                <article class="room-card">
+
+                    <div class="room-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80"
+                            alt="Presidential Suite"
+                        >
+
+                    </div>
+
+                    <div class="room-info">
+
+                        <div class="room-title">
+                            <h3>Presidential Suite</h3>
+                            <span>$399 <small>/ night</small></span>
+                        </div>
+
+                        <p>
+                            The ultimate Grand Vista experience with
+                            sophisticated interiors and premium service.
+                        </p>
+
+                        <div class="room-features">
+                            <span>🛏 King Bed</span>
+                            <span>👤 4 Guests</span>
+                            <span>📶 WiFi</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= RESTAURANT ================= -->
+    <section class="restaurant section" id="restaurant">
+
+        <div class="container restaurant-grid">
+
+            <div class="restaurant-content">
+
+                <p class="section-label">GRAND VISTA RESTAURANT</p>
+
+                <h2>
+                    Taste the art of
+                    <span>fine dining.</span>
+                </h2>
+
+                <p>
+                    Discover a carefully curated menu inspired by local
+                    ingredients and international flavors. Our chefs create
+                    every dish with passion, precision, and creativity.
+                </p>
+
+                <div class="restaurant-info">
+
+                    <div>
+                        <strong>07:00 AM</strong>
+                        <span>Breakfast</span>
+                    </div>
+
+                    <div>
+                        <strong>12:00 PM</strong>
+                        <span>Lunch</span>
+                    </div>
+
+                    <div>
+                        <strong>07:00 PM</strong>
+                        <span>Dinner</span>
+                    </div>
+
+                </div>
+
+                <a href="#" class="btn btn-primary">
+                    Explore Our Menu
+                </a>
+
+            </div>
+
+
+            <div class="restaurant-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1000&q=80"
+                    alt="Fine dining restaurant"
+                >
+
+                <div class="chef-card">
+                    <span>CHEF'S SPECIAL</span>
+                    <strong>Signature Tasting Menu</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FEATURES ================= -->
+    <section class="features section">
+
+        <div class="container">
+
+            <div class="section-heading centered">
+
+                <p class="section-label">WHY GRAND VISTA</p>
+
+                <h2>
+                    Everything you need for
+                    <span>a perfect stay.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+                    <div class="feature-icon">🏨</div>
+                    <h3>Luxury Rooms</h3>
+                    <p>
+                        Thoughtfully designed rooms with premium amenities.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🍽️</div>
+                    <h3>Fine Dining</h3>
+                    <p>
+                        Fresh ingredients and unforgettable culinary experiences.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🏊</div>
+                    <h3>Swimming Pool</h3>
+                    <p>
+                        Relax and unwind beside our beautiful outdoor pool.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">💆</div>
+                    <h3>Spa & Wellness</h3>
+                    <p>
+                        Rejuvenate your body and mind with our spa treatments.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BOOKING CTA ================= -->
+    <section class="booking-section" id="booking">
+
+        <div class="container booking-content">
+
+            <p class="section-label">PLAN YOUR STAY</p>
+
+            <h2>
+                Your perfect getaway
+                <span>starts here.</span>
+            </h2>
+
+            <p>
+                Reserve your room today and experience Grand Vista.
+            </p>
+
+            <button class="btn btn-primary" id="reserveBtn">
+                Make a Reservation
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer" id="contact">
+
+        <div class="container footer-grid">
+
+            <div class="footer-about">
+
+                <a href="#" class="logo">
+                    Grand<span>Vista</span>
+                </a>
+
+                <p>
+                    A destination where exceptional hospitality,
+                    luxurious comfort, and unforgettable dining come together.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Explore</h4>
+
+                <a href="#home.html">Home</a>
+                <a href="#rooms.html">Rooms</a>
+                <a href="restaurant.html">Restaurant</a>
+                <a href="#about.html">About Us</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Contact</h4>
+
+                <p>📍 25 Luxury Avenue, City Center</p>
+                <p>📞 +1 234 567 890</p>
+                <p>✉️ hello@grandvista.com</p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Follow Us</h4>
+
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <p>© 2026 Grand Vista Hotel & Restaurant. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
