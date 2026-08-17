@@ -1,0 +1,434 @@
+
+.restaurant-header {
+    background: rgba(20, 19, 16, 0.35);
+}
+
+.restaurant-header .active {
+    color: var(--primary);
+}
+
+.restaurant-hero {
+    min-height: 650px;
+    position: relative;
+
+    background:
+        url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=2000&q=85")
+        center / cover;
+
+    display: flex;
+    align-items: center;
+}
+
+.restaurant-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.25)
+        );
+}
+
+.restaurant-hero-content {
+    position: relative;
+    color: white;
+    padding-top: 80px;
+}
+
+.restaurant-hero h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(55px, 7vw, 85px);
+    line-height: 1.05;
+    max-width: 800px;
+    margin-bottom: 25px;
+}
+
+.restaurant-hero h1 span {
+    color: var(--primary);
+}
+
+.restaurant-hero-content > p:last-child {
+    font-size: 18px;
+    color: #ddd;
+    max-width: 550px;
+}
+
+
+/* =====================================
+   INTRO
+===================================== */
+
+.restaurant-intro {
+    background: white;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.intro-text {
+    color: #666;
+}
+
+.intro-text p {
+    margin-bottom: 20px;
+}
+
+
+/* =====================================
+   MENU
+===================================== */
+
+.menu-section {
+    background: var(--cream);
+}
+
+.menu-description {
+    max-width: 600px;
+    margin: 20px auto 0;
+    color: #777;
+}
+
+.menu-filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: #555;
+    padding: 11px 22px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: white;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.menu-card {
+    background: white;
+    overflow: hidden;
+    transition: 0.35s;
+}
+
+.menu-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.menu-card.hidden {
+    display: none;
+}
+
+.menu-image {
+    height: 245px;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-image img {
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.menu-card:hover .menu-image img {
+    transform: scale(1.06);
+}
+
+.menu-info {
+    padding: 23px;
+}
+
+.menu-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-title h3 {
+    font-size: 23px;
+}
+
+.menu-title strong {
+    color: var(--primary);
+    font-size: 17px;
+}
+
+.menu-info > p {
+    color: #777;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.chef-choice {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+    background: var(--primary);
+    color: white;
+
+    padding: 7px 12px;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+/* =====================================
+   CHEF
+===================================== */
+
+.chef-section {
+    background: white;
+}
+
+.chef-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+    align-items: center;
+}
+
+.chef-image {
+    height: 570px;
+    overflow: hidden;
+}
+
+.chef-image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.chef-content > p:not(.section-label) {
+    color: #666;
+    margin-top: 22px;
+}
+
+.chef-signature {
+    font-family: "Playfair Display", serif;
+    font-size: 35px;
+    font-style: italic;
+    margin-top: 35px;
+}
+
+.chef-role {
+    color: var(--primary);
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+
+/* =====================================
+   HOURS
+===================================== */
+
+.hours-section {
+    background: #f1eee7;
+    padding: 90px 0;
+}
+
+.hours-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.hours-list {
+    background: white;
+    padding: 15px 30px;
+}
+
+.hours-list div {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.hours-list div:last-child {
+    border-bottom: none;
+}
+
+.hours-list span {
+    color: #777;
+}
+
+.hours-list strong {
+    font-size: 13px;
+}
+
+
+/* =====================================
+   RESERVATION
+===================================== */
+
+.reservation-section {
+    position: relative;
+
+    padding: 120px 0;
+
+    background:
+        url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2000&q=85")
+        center / cover;
+
+    color: white;
+}
+
+.reservation-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(20, 18, 15, 0.78);
+}
+
+.reservation-content {
+    position: relative;
+    text-align: center;
+}
+
+.reservation-content > h2 {
+    max-width: 800px;
+    margin: auto;
+}
+
+.reservation-content > p:not(.section-label) {
+    color: #ddd;
+    margin: 20px auto 40px;
+}
+
+.reservation-form {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) auto;
+    gap: 12px;
+
+    background: white;
+    padding: 20px;
+
+    text-align: left;
+}
+
+.reservation-form div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.reservation-form label {
+    color: #777;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.reservation-form input,
+.reservation-form select {
+    border: none;
+    border-bottom: 1px solid var(--border);
+    padding: 9px 0;
+    outline: none;
+    background: white;
+}
+
+.reservation-form .btn {
+    align-self: end;
+    height: 43px;
+    white-space: nowrap;
+}
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 1000px) {
+
+    .menu-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .reservation-form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .reservation-form .btn {
+        grid-column: span 2;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .intro-grid,
+    .chef-grid,
+    .hours-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .chef-image {
+        height: 450px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .restaurant-hero {
+        min-height: 600px;
+    }
+
+    .restaurant-hero h1 {
+        font-size: 52px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .reservation-form {
+        grid-template-columns: 1fr;
+    }
+
+    .reservation-form .btn {
+        grid-column: auto;
+    }
+
+    .hours-list {
+        padding: 10px 20px;
+    }
+
+    .hours-list div {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+}
